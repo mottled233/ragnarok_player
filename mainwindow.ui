@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1029</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1029</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1029</width>
+    <height>625</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1029</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="controlBar" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>556</y>
+       <width>1029</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="Buttonwidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>171</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="playButton">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>46</width>
+         <height>46</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#playButton{
+border-image: url(:/playIcon.png);
+}
+QPushButton#playButton:hover{
+border-image: url(:/playIcon_hover.png);
+}
+QPushButton#playButton:pressed{
+border-image: url(:/playIcon_clicked.png);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>125</x>
+         <y>7</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/nextButton.png);
+}
+QPushButton:hover{
+	border-image: url(:/nextButton_clicked.png);
+}
+QPushButton:pressed{
+	border-image: url(:/nextButton_hover.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>7</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/prevButton.png);
+}
+QPushButton:hover{
+	border-image: url(:/prevButton_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/prevButton_clicked.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="openListButton">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>27</y>
+        <width>45</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>40</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/listButton.png);
+}
+QPushButton:hover{
+	border-image: url(:/listButton_hover.png);
+}
+QPushButton:click{
+	border-image: url(:/listButton_click.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>30</y>
+        <width>481</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::add-page:Horizontal 
+{      
+        background-color: rgb(87, 97, 106);  
+        height:4px;  
+} 
+     QSlider::sub-page:Horizontal   
+    {  
+        background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));  
+        height:4px;  
+     }  
+    QSlider::groove:Horizontal   
+    {  
+        background:transparent;  
+        height:6px;  
+    }  
+    QSlider::handle:horizontal{background:white;width:10px;border-radius:5px;margin:-3px 0px -3px 0px;}  </string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="timeLabel">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="text">
+       <string>00:00/00:00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nameLabel">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;微软雅黑&quot;;
+color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="text">
+       <string>Ragnarok</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="volSlider">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>30</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+     QSlider::add-page:Horizontal  
+     {       
+		background-color: rgb(87, 97, 106);
+       
+        height:4px;  
+     }  
+     QSlider::sub-page:Horizontal   
+    {  
+         background-color: rgb(37, 168, 198);  
+        height:4px;  
+     }  
+    QSlider::groove:Horizontal   
+    {  
+        background:transparent;  
+        height:6px;  
+    }  
+   QSlider::handle:horizontal{background:white;width:10px;border-radius:5px;margin:-3px 0px -3px 0px;}  </string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="muteButton">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>25</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{border-image: url(:/volIcon.png);}
+QPushButton:hover{border-image: url(:/volIcon_hover.png);}
+QPushButton:pressed{border-image: url(:/volIcon_click.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modeButton">
+      <property name="geometry">
+       <rect>
+        <x>927</x>
+        <y>23</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{border-image: url(:/loopIcon.png);}
+QPushButton:hover{border-image: url(:/loopIcon_hover.png);}
+QPushButton:pressed{border-image: url(:/loopIcon_click.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="topBar" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1029</width>
+       <height>47</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>58</red>
+           <green>63</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>48</red>
+           <green>52</green>
+           <blue>63</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>26</red>
+           <green>28</green>
+           <blue>34</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>58</red>
+           <green>63</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>48</red>
+           <green>52</green>
+           <blue>63</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>26</red>
+           <green>28</green>
+           <blue>34</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>58</red>
+           <green>63</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>48</red>
+           <green>52</green>
+           <blue>63</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>26</red>
+           <green>28</green>
+           <blue>34</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>19</red>
+           <green>21</green>
+           <blue>25</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>39</red>
+           <green>42</green>
+           <blue>51</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Chiller</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 219, 255);</string>
+      </property>
+      <property name="text">
+       <string>Ragnarok</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Chiller</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(190, 190, 190);</string>
+      </property>
+      <property name="text">
+       <string>Player</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="searchWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>280</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(190, 190, 190);
+font: 10pt &quot;微软雅黑&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="closeAllButton">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/clsLisBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/clsLisBtn_hover.png);
+}
+QPushButton:click{
+	border-image: url(:/clsLisBtn_click.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="miniButton">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/miniBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/miniBtn_hover.png);
+}
+QPushButton:click{
+	border-image: url(:/miniBtn_click.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="lline2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>47</y>
+       <width>1029</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(16, 141, 189);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="leftWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>48</y>
+       <width>190</width>
+       <height>507</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#leftWidget{background-color: rgb(38, 42, 50)}</string>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 126);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>我的歌单</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="listOfListWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>190</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#listOfListWidget{
+	background-color: rgb(38, 42, 50);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>48</y>
+       <width>651</width>
+       <height>507</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QStackedWidget#stackedWidget{background-color: rgb(24, 27, 34);}</string>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="styleSheet">
+       <string notr="true">QWidget#searchResultPage{background-color: rgb(24, 27, 34);}</string>
+      </property>
+      <widget class="QWidget" name="songOfListPage" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>651</width>
+         <height>507</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#songOfListPage{background-color: rgb(41, 45, 54);}</string>
+       </property>
+       <widget class="QListWidget" name="resultListWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>66</y>
+          <width>631</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget#resultListWidget{
+	border:0px solid gray;
+	background-color:rgb(45,48,55);
+}
+QListWidget#resultListWidget::item:hover{
+color:rgb(39, 216, 255);border-width:0;}  
+QListWidget#resultListWidget::item:selected{
+} 
+
+
+QScrollBar:vertical{ 
+width:12px; 
+border:1px solid rgba(0,0,0,50);
+border-radius:6px; 
+margin:0px,0px,0px,0px; 
+padding-top:15px; 
+padding-bottom:15px; 
+} 
+QScrollBar::handle:vertical{ 
+width:16px; 
+background:rgba(0,0,0,25%); 
+min-height:20; 
+border-radius:6px;
+} 
+QScrollBar::handle:vertical:hover{ 
+background:rgba(0,0,0,50%); 
+border:0px rgba(0,0,0,25%); 
+border-radius:6px;
+} 
+QScrollBar::sub-line:vertical{ 
+height:0px; 
+border-image:url(:/Res/scroll_up.png); 
+subcontrol-position:top; 
+} 
+QScrollBar::sub-line:vertical:hover{ 
+height:0px; 
+background:rgba(0,0,0,25%); 
+subcontrol-position:top; 
+} 
+QScrollBar::add-line:vertical{ 
+height:0px; 
+border-image:url(:/Res/scroll_down.png); 
+subcontrol-position:bottom; 
+} 
+QScrollBar::add-line:vertical:hover{ 
+height:0px; 
+background:rgba(0,0,0,25%); 
+subcontrol-position:bottom; 
+} 
+QScrollBar::add-page:vertical{ 
+background:rgb(255,255,255); 
+} 
+QScrollBar::sub-page:vertical{ 
+background:rgb(255,255,255); 
+} 
+QScrollBar::up-arrow:vertical{ 
+border-width:0px; 
+max-height:16px; 
+min-width:17px; 
+height:0px;
+width:0px;
+border-radius:6px; 
+} 
+QScrollBar::down-arrow:vertical{ 
+border-style:outset; 
+border-width:0px; 
+height:0px;
+width:0px;
+border-radius:6px; 
+} 
+
+QScrollBar:horizontal{width:0;height:0}</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image: url(:/addListItemBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/addListItemBtn_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/addListItemBtn_click.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="listDeleteBtn">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>23</y>
+          <width>25</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image: url(:/deleteLisItemBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/deleteLisItemBtn_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/deleteLisItemBtn_click.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="listNameLabel">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(191, 191, 191);
+font: 14pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>歌单名</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="playAllBun">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>26</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image: url(:/listPlayBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/listPlayBtn_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/listPlayBtn_click.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="playingPage" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>651</width>
+         <height>507</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#playingPage{background-color: rgb(24, 27, 34);}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="videoArea" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>651</width>
+         <height>507</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="QWidget" name="netWorkPage" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>651</width>
+         <height>507</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rightWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>842</x>
+       <y>48</y>
+       <width>188</width>
+       <height>507</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#rightWidget{background-color: rgb(24, 27, 34);}</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="rightline" native="true">
+     <property name="geometry">
+      <rect>
+       <x>841</x>
+       <y>48</y>
+       <width>1</width>
+       <height>507</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(90, 90, 90);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="bottomLine" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>555</y>
+       <width>1029</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(90, 90, 90);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="lis_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>549</x>
+       <y>145</y>
+       <width>480</width>
+       <height>410</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#lis_widget{background-color: rgb(41, 45, 54);}
+QScrollBar:vertical{ 
+width:12px; 
+border:1px solid rgba(0,0,0,50);
+border-radius:6px; 
+margin:0px,0px,0px,0px; 
+padding-top:15px; 
+padding-bottom:15px; 
+} 
+QScrollBar::handle:vertical{ 
+width:16px; 
+background:rgba(0,0,0,25%); 
+min-height:20; 
+border-radius:6px;
+} 
+QScrollBar::handle:vertical:hover{ 
+background:rgba(0,0,0,50%); 
+border:0px rgba(0,0,0,25%); 
+border-radius:6px;
+} 
+QScrollBar::sub-line:vertical{ 
+height:0px; 
+border-image:url(:/Res/scroll_up.png); 
+subcontrol-position:top; 
+} 
+QScrollBar::sub-line:vertical:hover{ 
+height:0px; 
+background:rgba(0,0,0,25%); 
+subcontrol-position:top; 
+} 
+QScrollBar::add-line:vertical{ 
+height:0px; 
+border-image:url(:/Res/scroll_down.png); 
+subcontrol-position:bottom; 
+} 
+QScrollBar::add-line:vertical:hover{ 
+height:0px; 
+background:rgba(0,0,0,25%); 
+subcontrol-position:bottom; 
+} 
+QScrollBar::add-page:vertical{ 
+background:rgb(255,255,255); 
+} 
+QScrollBar::sub-page:vertical{ 
+background:rgb(255,255,255); 
+} 
+QScrollBar::up-arrow:vertical{ 
+border-width:0px; 
+max-height:16px; 
+min-width:17px; 
+height:0px;
+width:0px;
+border-radius:6px; 
+} 
+QScrollBar::down-arrow:vertical{ 
+border-style:outset; 
+border-width:0px; 
+height:0px;
+width:0px;
+border-radius:6px; 
+} 
+
+QScrollBar:horizontal{width:0;height:0}</string>
+     </property>
+     <widget class="QWidget" name="lisTitleWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>480</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#lisTitleWidget{
+background-color:qlineargradient(spread:pad, x1:0.500, y1:0, x2:0.500, y2:1, stop:0 rgba(38, 42, 51, 255), stop:1 rgba(32, 32, 45, 255));}</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>8</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(119, 119, 126);
+font: 12pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>播放队列</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addCurrentButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>7</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/addListItemBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/addListItemBtn_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/addListItemBtn_click.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="deleteCurrentButton">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>11</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/deleteLisItemBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/deleteLisItemBtn_hover.png);
+}
+QPushButton:pressed{
+	border-image: url(:/deleteLisItemBtn_click.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="closeCurrentButton">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>10</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/clsLisBtn.png);
+}
+QPushButton:hover{
+	border-image: url(:/clsLisBtn_hover.png);
+}
+QPushButton:click{
+	border-image: url(:/clsLisBtn_click.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="crtListScroll">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>49</y>
+        <width>481</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>479</width>
+         <height>359</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#scrollAreaWidget{background-color: rgb(41, 45, 54);}
+font: 12pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>crtListScroll</zorder>
+     <zorder>lisTitleWidget</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
